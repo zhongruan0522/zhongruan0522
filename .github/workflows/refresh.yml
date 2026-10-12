@@ -1,0 +1,42 @@
+name: Refresh profile cards
+
+on:
+  schedule:
+    # every 24 hours (UTC 19:00 = Beijing 03:00)
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [run/**, .github/workflows/refresh.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # PROFILE_TOKEN: repo secret holding the read token for the account and its
+      # organizations. Without it the build fails loudly instead of serving stale cards.
+      - name: Generate profile-details, languages and stats cards
+        run: python run/build.py
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+      - name: Generate contribution snake animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/snake.svg
+            assets/snake-dark.svg?palette=github-dark
+      - name: Commit and push assets
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add assets
+          git diff --cached --quiet || (git commit -m "Refresh profile cards" && git push)
