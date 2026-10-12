@@ -20,9 +20,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      # Card 1 (profile-details) is rendered by the official github-profile-summary-cards
+      # action in-repo (same renderer as its API) — the public vercel API rate-limits
+      # CI runner IPs, so we do not depend on it.
+      - name: Generate profile-details card (transparent theme)
+        uses: vn7n24fzkq/github-profile-summary-cards@v0.12.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          THEME: transparent
+          AUTO_PUSH: false
+      - name: Move profile-details card into assets
+        run: |
+          mv profile-summary-card-output/transparent/0-profile-details.svg assets/profile-details.svg
+          sudo rm -rf profile-summary-card-output
       # PROFILE_TOKEN: repo secret holding the read token for the account and its
       # organizations. Without it the build fails loudly instead of serving stale cards.
-      - name: Generate profile-details, languages and stats cards
+      - name: Generate languages and stats cards
         run: python run/build.py
         env:
           PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
