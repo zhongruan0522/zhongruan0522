@@ -1,19 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="108" viewBox="0 0 880 108" role="img" aria-label="Language distribution by code size: TypeScript 71.1%, Go 13.6%, Python 6.5%, JavaScript 1.8%, MDX 0.7%, Other 6.3%">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="108" viewBox="0 0 880 108" role="img" aria-label="Language distribution by code size: TypeScript 58.8%, JavaScript 13.3%, MDX 8.3%, Go 7%, Python 6.9%, Rust 1%, Other 4.8%">
 <text x="32" y="38" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace" font-size="12" letter-spacing="1.5" fill="#006AFF">LANGUAGES</text>
 <text x="848" y="38" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="11" fill="#417E87" fill-opacity="0.8">by code size across my repositories and organizations</text>
 <clipPath id="langbar"><rect x="32" y="54" width="816" height="12" rx="6"/></clipPath>
 <g clip-path="url(#langbar)">
-<rect x="32.0" y="54" width="580.7" height="12" fill="#3178c6"/>
-<rect x="612.2" y="54" width="111.5" height="12" fill="#00ADD8"/>
-<rect x="723.2" y="54" width="53.5" height="12" fill="#3572A5"/>
-<rect x="776.2" y="54" width="15.2" height="12" fill="#f1e05a"/>
-<rect x="790.9" y="54" width="6.2" height="12" fill="#fcb32c"/>
-<rect x="796.6" y="54" width="51.9" height="12" fill="#8b97a8"/>
+<rect x="32.0" y="54" width="480.3" height="12" fill="#3178c6"/>
+<rect x="511.8" y="54" width="109.0" height="12" fill="#f1e05a"/>
+<rect x="620.3" y="54" width="68.2" height="12" fill="#fcb32c"/>
+<rect x="688.1" y="54" width="57.6" height="12" fill="#00ADD8"/>
+<rect x="745.2" y="54" width="56.8" height="12" fill="#3572A5"/>
+<rect x="801.5" y="54" width="8.7" height="12" fill="#dea584"/>
+<rect x="809.6" y="54" width="39.7" height="12" fill="#8b97a8"/>
 </g>
-<circle cx="36.0" cy="90.0" r="4" fill="#3178c6"/><text x="45.0" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">TypeScript 71.1%</text>
-<circle cx="188.9" cy="90.0" r="4" fill="#00ADD8"/><text x="197.9" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">Go 13.6%</text>
-<circle cx="285.9" cy="90.0" r="4" fill="#3572A5"/><text x="294.9" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">Python 6.5%</text>
-<circle cx="402.6" cy="90.0" r="4" fill="#f1e05a"/><text x="411.6" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">JavaScript 1.8%</text>
-<circle cx="547.8" cy="90.0" r="4" fill="#fcb32c"/><text x="556.8" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">MDX 0.7%</text>
-<circle cx="648.5" cy="90.0" r="4" fill="#8b97a8"/><text x="657.5" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">Other 6.3%</text>
+<circle cx="36.0" cy="90.0" r="4" fill="#3178c6"/><text x="45.0" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">TypeScript 58.8%</text>
+<circle cx="188.9" cy="90.0" r="4" fill="#f1e05a"/><text x="197.9" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">JavaScript 13.3%</text>
+<circle cx="341.8" cy="90.0" r="4" fill="#fcb32c"/><text x="350.8" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">MDX 8.3%</text>
+<circle cx="442.5" cy="90.0" r="4" fill="#00ADD8"/><text x="451.5" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">Go 7%</text>
+<circle cx="520.2" cy="90.0" r="4" fill="#3572A5"/><text x="529.2" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">Python 6.9%</text>
+<circle cx="637.0" cy="90.0" r="4" fill="#dea584"/><text x="646.0" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">Rust 1%</text>
+<circle cx="728.5" cy="90.0" r="4" fill="#8b97a8"/><text x="737.5" y="94.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', Helvetica, Arial, sans-serif" font-size="12.5" fill="#417E87">Other 4.8%</text>
 </svg>
